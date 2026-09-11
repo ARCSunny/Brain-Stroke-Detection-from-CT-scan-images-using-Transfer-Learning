@@ -225,3 +225,44 @@ The project also provides support for other pretrained CNN architectures:
 - DenseNet121
 
 EfficientNetB0 is used as the default model because it provides a strong balance between model size, computational requirements and classification performance.
+
+## ⏱️ Early Stopping
+
+Early stopping is used during training to help prevent overfitting.
+
+The model monitors validation loss and restores the best-performing model weights.
+
+## 📊 Model Evaluation
+
+The trained model is evaluated using an independent test set.
+
+The evaluation includes:
+
+- Test loss
+- Test accuracy
+- Precision
+- Recall
+- F1-score
+- Classification report
+- Confusion matrix
+- Normalized confusion matrix
+- ROC curves
+- AUC
+- Prediction confidence
+- Error analysis
+
+## 📉 Training Curves
+
+Training and validation curves are generated for:
+
+### Accuracy
+Training Accuracy vs. Validation Accuracy
+### Loss
+Training Loss vs. Validation Loss
+
+These plots help analyze:
+
+- Model convergence
+- Overfitting
+- Underfitting
+- Training stability
