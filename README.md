@@ -294,3 +294,82 @@ The project calculates:
 - AUC for each class
 - Macro-average ROC-AUC
 
+## ❌ Error Analysis
+
+The project identifies incorrectly classified test images.
+
+For each incorrect prediction, the application records:
+
+- Image path
+- Actual class
+- Predicted class
+- Prediction confidence
+
+Misclassified CT images are also visualized to help understand model errors.
+
+## 🌐 Web Application
+
+A Streamlit web application is included for testing the trained model with new images.
+
+The application allows a user to:
+
+- Upload a brain CT image.
+- Display the uploaded image.
+- Run the trained model.
+- Display the predicted class.
+- Display prediction confidence.
+- Display probabilities for all three classes.
+
+### Web Application Architecture
+
+```
+User
+ │
+ ▼
+Streamlit Web Interface
+ │
+ ▼
+Upload CT Image
+ │
+ ▼
+Image Preprocessing
+ │
+ ▼
+brain_stroke_model.keras
+ │
+ ▼
+Prediction
+ │
+ ├── Bleeding
+ ├── Ischemia
+ └── Normal
+```
+## 📁 Project Structure
+```
+Brain-Stroke-CT-Detection/
+│
+├── app.py
+├── brain_stroke_model.keras
+├── requirements.txt
+├── Brain_Stroke_CT_Transfer_Learning.ipynb
+├── README.md
+│
+└── outputs/
+    ├── accuracy_curve.png
+    ├── loss_curve.png
+    ├── confusion_matrix.png
+    ├── normalized_confusion_matrix.png
+    ├── roc_curve.png
+    ├── class_distribution.png
+    ├── all_histograms.png
+    ├── feature_correlation_heatmap.png
+    ├── pairplot.png
+    ├── scatter_plot.png
+    ├── regression_plot.png
+    ├── feature_selection.png
+    ├── pca_visualization.png
+    ├── kmeans_clusters.png
+    └── prediction_errors.png
+```
+
+
