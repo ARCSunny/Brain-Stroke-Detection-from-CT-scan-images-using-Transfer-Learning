@@ -119,3 +119,28 @@ The pretrained EfficientNetB0 convolutional base is frozen while the newly added
 The later portion of the pretrained network is unfrozen and fine-tuned using a much smaller learning rate.
 
 This allows the model to adapt pretrained visual features to brain CT images while reducing the computational cost of training a CNN from scratch.
+
+## 🧪 Data Preprocessing
+
+The following preprocessing steps are implemented:
+
+- Image loading
+- RGB conversion
+- Image resizing to 224 × 224
+- Model-specific preprocessing
+- Dataset splitting
+- Stratified sampling
+
+### Data Augmentation
+
+Training images are augmented using:
+
+- Rotation
+- Width shifting
+- Height shifting
+- Zoom
+- Shearing
+- Horizontal flipping
+- Nearest-neighbor filling
+
+Data augmentation is applied only to the training set.
