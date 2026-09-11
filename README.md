@@ -93,3 +93,12 @@ Softmax
 ┌─────────────┬─────────────┬─────────────┐
 │  Bleeding   │  Ischemia   │   Normal    │
 └─────────────┴─────────────┴─────────────┘
+
+##Activation Functions
+
+The model uses:
+
+- **ReLU in the intermediate dense layer**
+- **Softmax in the final classification layer**
+
+The Softmax layer produces a probability distribution across the three classes.
