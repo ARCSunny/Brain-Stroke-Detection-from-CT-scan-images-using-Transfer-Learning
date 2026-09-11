@@ -103,3 +103,19 @@ The model uses:
 * Softmax in the final classification layer
 
 The Softmax layer produces a probability distribution across the three classes.
+
+## 🔄 Transfer Learning
+
+The project uses EfficientNetB0 pretrained on ImageNet.
+
+The training process consists of two major stages:
+
+**Stage 1 — Feature Extraction**
+
+The pretrained EfficientNetB0 convolutional base is frozen while the newly added classification layers are trained.
+
+**Stage 2 — Fine-Tuning**
+
+The later portion of the pretrained network is unfrozen and fine-tuned using a much smaller learning rate.
+
+This allows the model to adapt pretrained visual features to brain CT images while reducing the computational cost of training a CNN from scratch.
