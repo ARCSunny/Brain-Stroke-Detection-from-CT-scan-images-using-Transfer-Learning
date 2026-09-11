@@ -144,3 +144,56 @@ Training images are augmented using:
 - Nearest-neighbor filling
 
 Data augmentation is applied only to the training set.
+
+## 🔬 Feature Engineering
+
+In addition to deep-learning features, several handcrafted numerical image features are extracted for exploratory analysis.
+
+Examples include:
+
+- Mean intensity
+- Standard deviation of intensity
+- Minimum intensity
+- Maximum intensity
+- Median intensity
+- 25th percentile
+- 75th percentile
+- Dark pixel ratio
+- Bright pixel ratio
+- Edge strength
+- Horizontal variance
+- Vertical variance
+
+These features are used for data analysis, scaling, feature selection and clustering.
+
+## 📈 Exploratory Data Analysis
+
+The project includes several visualization techniques.
+
+### Class Distribution
+
+A bar chart is used to examine the number of images in each class.
+
+### Histograms
+
+Histograms are generated for important engineered image features.
+
+### Box Plots
+
+Box plots are used to compare numerical feature distributions between classes.
+
+### Scatter Plots
+
+Scatter plots are used to examine relationships between engineered features.
+
+### Regression Plots
+
+Regression plots are used to examine relationships between numerical image features.
+
+### Correlation Heatmap
+
+A correlation heatmap is used to analyze relationships between engineered features.
+
+### Pairplot
+
+Pairplots provide a visual overview of relationships between multiple numerical features.
