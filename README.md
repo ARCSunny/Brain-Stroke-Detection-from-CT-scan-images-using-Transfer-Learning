@@ -34,3 +34,21 @@ The main objectives of this project are:
 - Evaluate the model on an independent test set.
 - Visualize model performance and prediction errors.
 - Build a web-based prediction interface using Streamlit.
+
+# 📊 Dataset
+
+The project uses the **Brain Stroke CT Dataset** available on Kaggle.
+
+### Dataset Source
+
+[Kaggle - Brain Stroke CT Dataset](https://www.kaggle.com/datasets/ozguraslank/brain-stroke-ct-dataset)
+
+The dataset contains brain CT images belonging to three classes:
+
+| Class | Description |
+|---|---|
+| **Bleeding** | CT images associated with intracranial bleeding |
+| **Ischemia** | CT images associated with ischemic stroke |
+| **Normal** | CT images without the target stroke abnormalities |
+
+The dataset is divided into training, validation, and testing subsets using a **stratified split**.
