@@ -15,3 +15,22 @@ This project explores the use of **deep learning and transfer learning** to auto
 Instead of training a large convolutional neural network entirely from scratch, a pretrained **EfficientNetB0** model trained on ImageNet is used as the feature extraction backbone. The model is then adapted and fine-tuned for the brain CT classification task.
 
 The project also includes several traditional machine-learning and data-analysis techniques to provide a complete machine-learning workflow.
+
+## 🎯 Objectives
+
+The main objectives of this project are:
+
+- Develop a brain CT image classification model.
+- Apply transfer learning using a pretrained CNN.
+- Use **EfficientNetB0** as the primary pretrained model.
+- Perform image preprocessing and data augmentation.
+- Perform exploratory data analysis (EDA).
+- Engineer numerical image features.
+- Apply feature scaling and feature selection.
+- Explore the engineered features using PCA.
+- Apply K-Means clustering.
+- Train and fine-tune a CNN-based classifier.
+- Use Early Stopping to reduce overfitting.
+- Evaluate the model on an independent test set.
+- Visualize model performance and prediction errors.
+- Build a web-based prediction interface using Streamlit.
