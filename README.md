@@ -52,3 +52,44 @@ The dataset contains brain CT images belonging to three classes:
 | **Normal** | CT images without the target stroke abnormalities |
 
 The dataset is divided into training, validation, and testing subsets using a **stratified split**.
+
+# 🏗️ Model Architecture
+
+The main model uses **EfficientNetB0** with transfer learning.
+
+### Architecture
+
+```text
+Input Brain CT Image
+        │
+        ▼
+Image Resizing (224 × 224)
+        │
+        ▼
+Preprocessing
+        │
+        ▼
+Pretrained EfficientNetB0
+        │
+        ▼
+Global Average Pooling
+        │
+        ▼
+Dense Layer (256 neurons)
+        │
+        ▼
+Batch Normalization
+        │
+        ▼
+Dropout (0.40)
+        │
+        ▼
+Dense Layer (3 neurons)
+        │
+        ▼
+Softmax
+        │
+        ▼
+┌─────────────┬─────────────┬─────────────┐
+│  Bleeding   │  Ischemia   │   Normal    │
+└─────────────┴─────────────┴─────────────┘
