@@ -367,8 +367,6 @@ Brain-Stroke-CT-Detection/
     ├── scatter_plot.png
     ├── regression_plot.png
     ├── feature_selection.png
-    ├── pca_visualization.png
-    ├── kmeans_clusters.png
     └── prediction_errors.png
 ```
 
