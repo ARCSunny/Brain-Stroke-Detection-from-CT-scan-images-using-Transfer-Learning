@@ -110,11 +110,11 @@ The project uses EfficientNetB0 pretrained on ImageNet.
 
 The training process consists of two major stages:
 
-**Stage 1 — Feature Extraction**
+### **Stage 1 — Feature Extraction**
 
 The pretrained EfficientNetB0 convolutional base is frozen while the newly added classification layers are trained.
 
-**Stage 2 — Fine-Tuning**
+### **Stage 2 — Fine-Tuning**
 
 The later portion of the pretrained network is unfrozen and fine-tuned using a much smaller learning rate.
 
