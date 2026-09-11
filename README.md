@@ -394,3 +394,20 @@ Brain-Stroke-CT-Detection/
 - Streamlit
 ### Dataset
 - Kaggle
+
+## 🔮 Future Improvements
+
+Possible future improvements include:
+
+- Training with larger and more diverse datasets.
+- External validation using an independent dataset.
+- Hyperparameter optimization.
+- Class imbalance handling if required.
+- Grad-CAM visualization for model explainability.
+- Model calibration.
+- Cross-validation.
+- Comparison of all five pretrained architectures.
+- Ensemble learning.
+- Improved image preprocessing.
+- Deployment using a production-oriented backend.
+- Integration with a secure medical-imaging workflow.
