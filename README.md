@@ -273,7 +273,7 @@ These plots help analyze:
 A confusion matrix is generated to visualize classification performance across the three classes.
 
 Example structure:
-
+```
                     Predicted
                 B      I      N
              ┌──────┬──────┬──────┐
@@ -281,6 +281,16 @@ Actual   B   │      │      │      │
          I   │      │      │      │
          N   │      │      │      │
              └──────┴──────┴──────┘
-
+```
 Both regular and normalized confusion matrices are generated.
+
+## 📈 ROC Curve and AUC
+
+A multi-class ROC curve is generated using the One-vs-Rest (OvR) approach.
+
+The project calculates:
+
+- ROC curve for each class
+- AUC for each class
+- Macro-average ROC-AUC
 
