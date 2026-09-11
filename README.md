@@ -5,3 +5,13 @@ An end-to-end deep learning pipeline built for automated multi-class classificat
 - ✅ **Normal**
 
 The project includes complete data preprocessing, exploratory data analysis, feature engineering, feature selection, clustering, CNN-based transfer learning, model evaluation, error analysis, and a Streamlit web application for making predictions on new CT images.
+
+## 📌 Project Overview
+
+Brain stroke is a serious medical condition that requires rapid diagnosis. Medical imaging, particularly CT scans, can provide important information for identifying abnormalities associated with stroke.
+
+This project explores the use of **deep learning and transfer learning** to automatically classify brain CT images.
+
+Instead of training a large convolutional neural network entirely from scratch, a pretrained **EfficientNetB0** model trained on ImageNet is used as the feature extraction backbone. The model is then adapted and fine-tuned for the brain CT classification task.
+
+The project also includes several traditional machine-learning and data-analysis techniques to provide a complete machine-learning workflow.
