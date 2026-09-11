@@ -21,6 +21,26 @@ IMG_SIZE = 224
 
 CLASS_NAMES = ["Bleeding", "Ischemia", "Normal"]
 
+import tensorflow as tf
+from tensorflow.keras.applications.mobilenet_v2 import preprocess_input as mobilenet_preprocess
+from tensorflow.keras.applications.efficientnet import preprocess_input as efficientnet_preprocess
+from tensorflow.keras.applications.resnet50 import preprocess_input as resnet_preprocess
+from tensorflow.keras.applications.vgg16 import preprocess_input as vgg_preprocess
+from tensorflow.keras.applications.densenet import preprocess_input as densenet_preprocess
+
+@tf.keras.utils.register_keras_serializable()
+def preprocess_input(x):
+    return x / 255.0
+
+tf.keras.utils.get_custom_objects().update({
+    "mobilenet_preprocess": mobilenet_preprocess,
+    "efficientnet_preprocess": efficientnet_preprocess,
+    "resnet_preprocess": resnet_preprocess,
+    "vgg_preprocess": vgg_preprocess,
+    "densenet_preprocess": densenet_preprocess,
+    "preprocess_input": preprocess_input
+})
+
 @st.cache_resource
 def load_model():
     if not os.path.exists(MODEL_PATH):
