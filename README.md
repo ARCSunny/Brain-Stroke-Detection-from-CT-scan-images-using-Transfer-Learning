@@ -260,9 +260,27 @@ Training Accuracy vs. Validation Accuracy
 ### Loss
 Training Loss vs. Validation Loss
 
+
 These plots help analyze:
 
 - Model convergence
 - Overfitting
 - Underfitting
 - Training stability
+
+## 🔲 Confusion Matrix
+
+A confusion matrix is generated to visualize classification performance across the three classes.
+
+Example structure:
+
+                    Predicted
+                B      I      N
+             ┌──────┬──────┬──────┐
+Actual   B   │      │      │      │
+         I   │      │      │      │
+         N   │      │      │      │
+             └──────┴──────┴──────┘
+
+Both regular and normalized confusion matrices are generated.
+
