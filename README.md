@@ -370,4 +370,27 @@ Brain-Stroke-CT-Detection/
     └── prediction_errors.png
 ```
 
-
+## 💻 Technologies Used
+### Programming Language
+ - Python
+### Deep Learning
+- TensorFlow
+- Keras
+- CNN
+- Transfer Learning
+- EfficientNetB0
+### Machine Learning
+- Scikit-learn
+- StandardScaler
+- SelectKBest
+### Data Processing
+- NumPy
+- Pandas
+- Pillow
+### Visualization
+- Matplotlib
+- Seaborn
+### Web Application
+- Streamlit
+### Dataset
+- Kaggle
