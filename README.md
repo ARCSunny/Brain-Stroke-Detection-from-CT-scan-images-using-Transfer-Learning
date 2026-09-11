@@ -94,7 +94,7 @@ Softmax
 │  Bleeding   │  Ischemia   │   Normal    │
 └─────────────┴─────────────┴─────────────┘
 
-##Activation Functions
+## Activation Functions
 
 The model uses:
 
