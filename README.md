@@ -197,3 +197,31 @@ A correlation heatmap is used to analyze relationships between engineered featur
 ### Pairplot
 
 Pairplots provide a visual overview of relationships between multiple numerical features.
+
+## ⚙️ Feature Scaling
+
+The engineered numerical features are standardized using StandardScaler.
+
+This transforms the features so that they have comparable scales.
+
+## 🎯 Feature Selection
+
+The project uses SelectKBest with ANOVA F-test to identify the most informative engineered features.
+
+Feature-selection scores are also visualized using a bar chart.
+
+## 🧠 Deep Learning
+
+The primary deep-learning model is based on:
+
+EfficientNetB0 + Transfer Learning
+
+The project also provides support for other pretrained CNN architectures:
+
+- MobileNetV2
+- EfficientNetB0
+- ResNet50
+- VGG16
+- DenseNet121
+
+EfficientNetB0 is used as the default model because it provides a strong balance between model size, computational requirements and classification performance.
